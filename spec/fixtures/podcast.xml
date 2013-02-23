@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>datafruits.fm</title>
+    <link>http://www.datafruits.fm</link>
+    <description>datafruits.fm podcast j-pop chip garage skweee</description>
+    <language>en-us</language>
+    <copyright/>
+    <lastBuildDate>Sat, 16 Feb 2013 00:00:00 +00:00</lastBuildDate>
+    <ttl>1</ttl>
+    <atom:link href="http://www.datafruits.fm/podcast.xml" rel="self" type="application/rss+xml"/>
+</rss>

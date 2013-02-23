@@ -1,0 +1,5 @@
+#!/usr/bin/env ruby
+
+require 'podcast_updater'
+
+PodcastUpdater.run ARGV
