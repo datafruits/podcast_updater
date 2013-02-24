@@ -6,6 +6,7 @@ gem 'nokogiri'
 gem 'taglib-ruby'
 gem 'activesupport'
 gem 'trollop'
+gem 'rake'
 
 gem 'vcr'
 gem 'webmock'

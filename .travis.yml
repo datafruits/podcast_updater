@@ -9,7 +9,6 @@ notifications:
   email:
   - mcfiredrill@gmail.com
 rvm:
-- 1.8.7
 - 1.9.2
 - 1.9.3
-script: rake travis
+script: bundle exec rake
