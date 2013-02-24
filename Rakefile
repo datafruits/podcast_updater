@@ -10,6 +10,7 @@ require "hoe"
 # Hoe.plugin :racc
 # Hoe.plugin :rcov
 # Hoe.plugin :rubyforge
+Hoe.plugin :travis
 
 Hoe.spec "podcast_updater" do
   developer("Tony Miller", "mcfiredrill@gmail.com")
