@@ -1,5 +1,7 @@
 = podcast_updater
 
+[![Build Status](https://secure.travis-ci.org/mcfiredrill/forttree.png?branch=master)](http://travis-ci.org/mcfiredrill/forttree)
+
 * http://github.com/datafruits/podcast_updater
 
 == DESCRIPTION:
