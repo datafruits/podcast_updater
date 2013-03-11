@@ -6,7 +6,7 @@ require 'trollop'
 require 'date'
 
 class PodcastUpdater
-  def self.run
+  def self.run(args)
     opts = Trollop::options do
       opt :pic, "Picture for podcast", :type => String
       opt :title, "Podcast title", :type => String
