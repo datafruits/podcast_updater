@@ -1,34 +1,34 @@
-= podcast_updater
-
-[![Build Status](https://secure.travis-ci.org/datafruits/podcast_updater.png?branch=master)](http://travis-ci.org/datafruits/podcast_updater)
+# podcast_updater
 
 * http://github.com/datafruits/podcast_updater
 
-== DESCRIPTION:
+## DESCRIPTION:
+
+[![Build Status](https://secure.travis-ci.org/datafruits/podcast_updater.png?branch=master)](http://travis-ci.org/datafruits/podcast_updater)
 
 Update your podcast feed.
 Fix your mp3 tags and upload your mp3s to S3 along the way.
 
-== FEATURES/PROBLEMS:
+## FEATURES/PROBLEMS:
 
 * updates your podcast xml
 * uploads your mp3 to S3
 * adds title and image tags to your mp3
 * use case: updating a podcast one file at a time
 
-== SYNOPSIS:
+## SYNOPSIS:
 
-podcast_updater [options] <mp3> <path_to_podcast_xml>
+`podcast_updater [options] <mp3> <path_to_podcast_xml>`
 
-== REQUIREMENTS:
+## REQUIREMENTS:
 
 * FIX (list of requirements)
 
-== INSTALL:
+## INSTALL:
 
 gem install podcast_updater
 
-== DEVELOPERS:
+## DEVELOPERS:
 
 After checking out the source, run:
 
@@ -37,11 +37,11 @@ After checking out the source, run:
 This task will install any missing dependencies, run the tests/specs,
 and generate the RDoc.
 
-== LICENSE:
+## LICENSE:
 
 (The MIT License)
 
-Copyright (c) 2013 FIX
+Copyright (c) 2013
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
