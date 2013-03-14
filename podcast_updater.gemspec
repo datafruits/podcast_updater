@@ -1,9 +1,9 @@
 # -*- encoding: utf-8 -*-
+require 'podcast_updater/version'
 
 Gem::Specification.new do |s|
   s.name = "podcast_updater"
-  s.version = "0.0.1"
-
+  s.version = PodcastUpdater::VERSION
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Tony Miller"]
   s.date = "2013-03-12"
