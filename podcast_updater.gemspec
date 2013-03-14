@@ -13,7 +13,6 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = ["History.txt", "Manifest.txt"]
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
-  s.require_paths = ["lib"]
   s.homepage = "http://github.com/datafruits/podcast_updater"
   s.rdoc_options = ["--main", "README.md"]
   s.require_paths = ["lib"]
