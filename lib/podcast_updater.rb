@@ -18,7 +18,7 @@ update your podcast NOW >:|
       opt :description, "Description of podcast", :type => String
       opt :date, "Date of podcast", :type => String
       opt :dont_update_podcast, "Don't update podcast, just upload/replace the mp3", :default => false
-      opt :bucket, :type => String, :default => ENV['S3_BUCKET']
+      opt :bucket, "s3 bucket to use, defaults to ENV['S3_BUCKET']", :type => String, :default => ENV['S3_BUCKET']
     end
 
     opts = Trollop::with_standard_exception_handling p do
