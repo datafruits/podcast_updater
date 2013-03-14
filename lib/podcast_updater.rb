@@ -7,13 +7,23 @@ require 'date'
 
 class PodcastUpdater
   def self.run(args)
-    opts = Trollop::options do
+    p = Trollop::Parser.new do
+      version "Podcast Updater version #{VERSION}"
+      banner <<-EOS
+Podcast Updater
+update your podcast NOW >:|
+      EOS
       opt :pic, "Picture for podcast", :type => String
       opt :title, "Podcast title", :type => String
       opt :description, "Description of podcast", :type => String
       opt :date, "Date of podcast", :type => String
       opt :dont_update_podcast, "Don't update podcast, just upload/replace the mp3", :default => false
       opt :bucket, :type => String, :default => ENV['S3_BUCKET']
+    end
+
+    opts = Trollop::with_standard_exception_handling p do
+      raise Trollop::HelpNeeded if ARGV.empty? # show help screen
+      p.parse ARGV
     end
 
     aws = {:access_key_id => ENV['S3_KEY'],
