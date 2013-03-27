@@ -28,7 +28,7 @@ class Feed
   end
   def date=(date)
     date_node = Nokogiri::XML::Node.new("pubDate", @feed)
-    date_node.content = (date.strftime(DATE_FORMAT) << Time.now.zone)
+    date_node.content = "#{date.strftime(DATE_FORMAT)} #{Time.now.zone}"
     @new_item.add_child(date_node)
   end
   def read(file)
