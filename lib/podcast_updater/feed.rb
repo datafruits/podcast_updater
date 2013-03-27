@@ -22,6 +22,9 @@ class Feed
     enclosure_node['length'] = File.size(mp3).to_s
     enclosure_node['type'] = "audio/mpeg"
     @new_item.add_child(enclosure_node)
+    guid = Nokogiri::XML::Node.new("guid", @feed)
+    guid.content = url.to_s
+    @new_item.add_child(guid)
   end
   def date=(date)
     date_node = Nokogiri::XML::Node.new("pubDate", @feed)
