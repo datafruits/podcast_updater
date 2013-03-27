@@ -36,7 +36,7 @@ class Feed
   def write(file)
     @feed.at_css("channel").add_child(@new_item)
 
-    @feed.at_css("lastBuildDate").content = (Time.now.strftime(DATE_FORMAT) << Time.now.zone)
+    @feed.at_css("lastBuildDate").content = Time.now.strftime(DATE_FORMAT)
     File.open(file, "w"){|f| f.write(@feed)}
   end
 end
